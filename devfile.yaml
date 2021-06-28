@@ -30,7 +30,7 @@ commands:
       component: py-web
   - id: run-app
     exec:
-      commandLine: "python wsgi.py"
+      commandLine: "python app.py"
       workingDir: ${PROJECTS_ROOT}
       component: py-web
       group:
