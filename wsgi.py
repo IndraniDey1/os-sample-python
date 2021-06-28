@@ -1,9 +1,6 @@
-from flask import Flask
-application = Flask(__name__)
+f= open("guru99.txt","w+")
 
-@application.route("/")
-def hello():
-    return "Hello World!"
+for i in range(10):
+     f.write("This is line %d\r\n" % (i+1))
 
-if __name__ == "__main__":
-    application.run()
+f.close() 
